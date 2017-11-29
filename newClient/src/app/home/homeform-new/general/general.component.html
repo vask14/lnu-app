@@ -1,0 +1,75 @@
+
+<form  #generalForm="ngForm">
+  <div>
+  <div class="input">
+  <label>Image url:</label>
+  <input type="file" accept=".jpg, .jpeg, .png" name='image' ngModel (change)="getFile($event)" #image="ngModel">
+  <div *ngIf="!imageloaded && (image.dirty || image.touched) " class="alert alert-danger">
+  <div>
+  Image required!
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+  <div class="input">
+  <label>Title:</label>
+  <input type="text" name='title' required minlength="10" [(ngModel)]="product.title" #title="ngModel">
+  <div *ngIf="title.errors && (title.dirty || title.touched)" class="alert alert-danger">
+  <div [hidden]="!title.errors.required">
+  Title required!
+  </div>
+  <div [hidden]="!title.errors.minlength">
+  Title must be at least 10 charackters long!
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+  <div class="input">
+  <label>Description:</label>
+  <input type="text" name='description' required maxlength="1000" [(ngModel)]="product.description" #description="ngModel">
+  <div *ngIf="description.errors && (description.dirty || description.touched)" class="alert alert-danger">
+  <div [hidden]="!decription.errors.required">
+  Description required!
+  </div>
+  <div [hidden]="!decription.errors.maxlength">
+  Description must be less than 1000 charackters long!
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+  <div class="input">
+  <label>Price:</label>
+  <input type="number" name='price' pattern="[0-9]*" required  [(ngModel)]="product.price" #price="ngModel">
+  <div *ngIf="price.errors && (price.dirty || price.touched)" class="alert alert-danger">
+  <div [hidden]="!price.errors.required">
+  Price required!
+  </div>
+  <div [hidden]="!price.errors.pattern">
+  Price is less than 0!
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+  <div class="input">
+  <label>Quantity:</label>
+  <input  type="number" name='quantity' pattern="[0-9]*"  required [(ngModel)]="product.quantity"  #quantity="ngModel">
+  <div *ngIf="quantity.errors && (quantity.dirty || quantity.touched)" class="alert alert-danger">
+  <div [hidden]="!quantity.errors.required">
+  Quantity required!
+  </div>
+  <div [hidden]="!quantity.errors.pattern">
+  Quantity is less than 0!
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+  <div class="input">
+  <button [disabled]="!generalForm.form.valid" (click)="savegeneral()">Save</button>
+  </div>
+  </div>
+  </form>

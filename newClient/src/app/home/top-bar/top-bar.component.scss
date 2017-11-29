@@ -1,0 +1,33 @@
+@import"../../app.component.scss";
+.container-fluid row{
+    border-top: $border;
+}
+.wrapper {
+    background: #fcfcfc;
+    height: 85px;
+    border-bottom: $border;
+}
+.wrapper {
+    h1 {
+        color:$grey;
+        line-height: 35px;
+        font-style: normal;
+        font-size: 27px;
+        padding-left: $paddingLeft;
+    }
+}
+
+.fluid {
+    background: #fcfcfc;
+    border-bottom: 1px solid #ebeaea;
+}
+span {
+    a {
+        @include spanA;
+    }
+}
+span {
+    a:hover {
+        @include spanA;
+    }
+}

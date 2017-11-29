@@ -1,0 +1,37 @@
+
+.regform{
+	text-align: center;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:30px;
+	display: block;
+	a{
+		font-size: 16px;
+		border-radius: 50%;
+		padding: 10px 15px;
+		margin: 0px 3px;
+		text-decoration:none;
+		color: black;
+	}
+	button{
+	margin-top: 10px;
+	padding: 8px 16px;
+	font-size: 22px;
+	outline: 0;
+	&:hover {
+		cursor:pointer;
+	background: green}
+	}
+	}
+
+.grey{
+	background-color:#9a9a9a;
+}
+.orange{
+	background-color: orange;
+}
+.green{
+	background-color: green;
+}

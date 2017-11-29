@@ -1,0 +1,69 @@
+@import"../../app.component.scss";
+.page-form {
+    h3 {
+        line-height: 30px;
+        @include fontStyle;
+        color: $grey;
+        font-size: 24px;
+        padding-left: $paddingLeft;
+    }
+}
+.page-form {
+    p {
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+        color: $grey;
+        font-size: 16px;
+        padding-left: $paddingLeft;
+    }
+}
+form{
+    .main-form {
+        label {
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-weight: 700;
+            color:#888;
+        }
+    }
+    
+}
+.main-form {
+    textarea {
+        width: 100%;
+        border: 0px;
+        border-bottom: 1px solid #fff;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        @include fontSize;
+        line-height: 22px;
+        color: #555;
+        background-color: #FCFCFC;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09) inset;
+    }
+    
+}
+input[type=text] {
+    padding-top: 10px;
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    @include fontSize;
+    line-height: 22px;
+    color: #555;
+    background-color: #FCFCFC;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09) inset;
+}
+input[type=submit] {
+    background-color: #333333;
+    padding: 7px 11px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+    @include fontSize;
+}

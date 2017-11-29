@@ -1,0 +1,36 @@
+@import"../../app.component.scss";
+.text {
+    p {
+        padding-left: $paddingLeft;
+        color: $grey;
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+.res  {
+    p {
+        line-height: 24px;
+        font-weight: 400;
+        @include fontStyle;
+        color: $grey;
+        font-size: 16px;
+    }
+
+}
+.res {
+    padding-left: $paddingLeft;
+    padding-top: 55px;
+}
+.spans {
+    padding-left:$paddingLeft;
+   
+}
+.spans {
+    span {
+        line-height: 24px;
+        font-weight: 400;
+        @include fontStyle;
+        color: $grey;
+        font-size: 16px;
+    }
+}

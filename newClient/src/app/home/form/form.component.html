@@ -1,0 +1,31 @@
+<div class = "page-form">
+  <div class = "container">
+      <h3>Bir Cevap Yazın</h3>
+      <p>E-posta hesabınız yayımlanmayacak. Gerekli alanlar * ile işaretlenmişlerdir</p>     
+      <form class= "main-form">
+          <div *ngFor='let block of myArray' [class]="block.ClassName">
+              <label>{{block.text}}</label>
+              <!--<input [type]="InputType">-->
+          </div>
+         <!-- <p>
+            <label>Yorum</label>
+            <textarea cols= "45" rows = "8"></textarea>
+          </p>
+          <p>
+              <label>İsim * </label>
+              <input type="text">
+          </p>
+          <p>
+              <label>E-posta *  </label>
+              <input type="text">
+          </p>
+          <p>
+                <label>İnternet sitesi</label>
+                <input type="text">
+          </p>
+          <p>
+                <input type = "submit" value="Yorum gönder">
+          </p>-->
+      </form>                           
+  </div>
+</div>

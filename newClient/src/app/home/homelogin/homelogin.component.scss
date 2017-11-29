@@ -1,0 +1,21 @@
+.test{
+    background:rgb(146, 123, 127);
+    cursor:pointer;
+    border: 1px solid;
+    margin-left:550px;
+    border-radius: 34px;
+    padding: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size:25px;
+    font-style:bold;
+
+    &:hover{
+      background:rgb(200, 123, 100)
+    }
+    
+}
+.input {
+    color:rgb(63, 65, 63);
+    padding:10px 15px;
+}

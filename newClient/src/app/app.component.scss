@@ -1,0 +1,27 @@
+$yellow:#ef8513;
+$paddingLeft:15px;
+$grey:#727070;
+$border:1px solid #f5f5f5;
+$position:absolute;
+
+@mixin textNone() {
+    text-decoration: none;
+}
+
+@mixin spanA() {
+    color: #fac200;
+    text-decoration: none;
+}
+
+
+@mixin fontStyle() {
+    font-style: normal;
+}
+
+@mixin fontSize() {
+    font-size: 12px;
+}
+
+@mixin paddingTop() {
+    padding-top: 18px;    
+}

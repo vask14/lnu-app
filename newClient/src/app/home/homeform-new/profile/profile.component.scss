@@ -1,0 +1,40 @@
+.input {
+	position: relative;
+	display: inline-table;
+	margin-top: 20px;
+	background:blue;
+ label {
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
+	left: 10px;
+	background: white;
+	padding: 5px 2px;
+}
+select {
+	padding: 10px 20px;
+	font-size: 25px;
+	outline: 0;
+	background:blue;
+}
+ input {
+
+	font-size: 25px;
+	padding: 10px 20px;
+	outline: 0;
+}
+	button{
+padding: 10px 20px;
+	font-size: 25px;
+	outline: 0;
+	}
+}
+.isauction{
+	
+	input{
+		margin: 25px 50px 5px 50px;
+	}
+}
+.datepicker{
+	padding: 10px 12px;
+}

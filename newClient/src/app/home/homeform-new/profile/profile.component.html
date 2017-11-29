@@ -1,0 +1,69 @@
+<form #profileForm="ngForm">
+  <div>
+  <div class="input">
+  <label>Category:</label>
+  <select name="category" required [(ngModel)]="product.category" #category="ngModel">
+    <option value="furniture" >Mobile</option>
+    <option value="antiques">Laptop</option>
+    <option value="painting">Computer</option>
+    <option value="other">Other goods</option>
+  </select>
+  <div *ngIf="category.errors && (category.dirty || category.touched)" class="alert alert-danger">
+  <div [hidden]="!category.errors.required">
+  Category required!
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+  <div class="input">
+  <div class="isauction">
+  <label>Is auction?</label>
+  <input type="checkbox" name='isauction' [(ngModel)]="product.isauction">
+  </div>
+  </div>
+  </div>
+  <div>
+  <div *ngIf="product.isauction" class="input">
+  <label>Start date:</label>
+  <div class="datepicker">
+  <dp-date-picker name="startdate" [(ngModel)]="product.startdate"></dp-date-picker>
+  </div>
+  </div>
+  </div>
+  <div>
+  <div *ngIf="product.isauction" class="input">
+  <label>End date:</label>
+  <div class="datepicker">
+  <dp-date-picker name="enddate" [(ngModel)]="product.enddate"></dp-date-picker>
+  </div>
+  </div>
+  </div>
+  <div>
+  <div *ngIf="product.isauction" class="input">
+  <label>Start price:</label>
+  <input type="number" name='startprice' pattern="[0-9]*" [(ngModel)]="product.startprice">
+  <div *ngIf="startprice.errors && (startprice.dirty || startprice.touched)" class="alert alert-danger">
+  <div [hidden]="!startprice.errors.pattern">
+  Start price is less than 0!
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+  <div *ngIf="product.isauction" class="input">
+  <label>Step:</label>
+  <input type="number" name='step' pattern="[0-9]*" [(ngModel)]="product.step">
+  <div *ngIf="step.errors && (step.dirty || step.touched)" class="alert alert-danger">
+  <div [hidden]="!step.errors.pattern">
+  Step is less than 0!
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+  <div class="input">
+  <button  [disabled]="!profileForm.form.valid" (click)="saveprofile()">Save</button>
+  </div>
+  </div>
+  </form>

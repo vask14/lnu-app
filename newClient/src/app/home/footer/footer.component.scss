@@ -1,0 +1,90 @@
+@import"../../app.component.scss";
+.main-footer {
+    background: #262727;
+}
+.container-img {
+    width: 245px;
+    padding-top: 18px;
+}
+.container-img {
+    img{
+        width:77px;
+        height: 60px;
+        margin-right: -4px;
+    }
+    
+}
+.footer-par {
+    color: #bfbfbf;
+    line-height: 21px;
+    font-size: 16px;
+}
+.caption {
+    color:#FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.footer-posts {
+    li {
+        border-top: 1px solid #bbbbbb;
+        padding: 8px 0;
+        list-style: none;
+        font-size: 16px;
+    }
+}
+.footer-posts {
+    a { 
+        color: #bfbfbf;
+    }
+    
+}
+.footer-content {
+    padding-top: 55px;
+}
+.footer-text {
+    color: #bfbfbf;
+    line-height: 21px;
+    font-size: 16px;
+}
+.footer-posts {
+    li:first-child {
+        border: none;
+    }
+    
+}
+.list {
+    @include paddingTop;
+}
+.footer-text {
+    @include paddingTop;
+}
+.pre-footer {
+    background: #363839;
+}
+.list-item {
+    a {
+        color: white;
+    }
+    
+}
+.footer-menu {
+    ul {
+        li {
+            a:hover {
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+    
+}
+.fluid {
+    background: #fcfcfc;
+    border-bottom: 1px solid #ebeaea;
+}
+.wrap {
+    border-top: 1px solid #ebeaea;
+}
+.menu {
+    padding-left: $paddingLeft;
+}
